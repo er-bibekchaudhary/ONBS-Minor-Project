@@ -9,6 +9,22 @@ public partial class Admin_ManageUsers : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        
+    }
 
+  
+
+    protected void DdlOperation_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (DdlOperation.SelectedItem.Text == "Add User")
+        {
+            PnlAddUser.Visible = true;
+            PnlEditUser.Visible = false;
+        }
+        if (DdlOperation.SelectedItem.Text == "Edit User")
+        {
+            PnlAddUser.Visible = false;
+            PnlEditUser.Visible = true;
+        }
     }
 }
