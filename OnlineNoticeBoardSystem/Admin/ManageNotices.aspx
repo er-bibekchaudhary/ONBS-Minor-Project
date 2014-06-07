@@ -5,11 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 this is admin/managenotices<br />
     <br />
-    <asp:Panel ID="PnlAddNotice" runat="server" Width="909px">
-        Add Notice<br />
+    <asp:Panel ID="PnlAddNotice" runat="server" Width="909px" GroupingText="Add Notice">
+        
 
     </asp:Panel>
-     <asp:Panel ID="PnlEditNotice" runat="server" Width="909px">
+     <asp:Panel ID="PnlEditNotice" runat="server" Width="909px" GroupingText="Edit Notice">
     </asp:Panel>
 &nbsp;
 
