@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    Select Your Operation: <asp:DropDownList ID="DdlOperation" runat="server" onselectedindexchanged="DdlOperation_SelectedIndexChanged">
-    <asp:ListItem Value="Add User"  Text="Add User"></asp:ListItem>
-   <asp:ListItem Value="Edit User"  Text="Edit User"></asp:ListItem>
+    Select Your Operation: <asp:DropDownList ID="DdlOperation" runat="server">
+    <asp:ListItem Value='1'  Text="Add User"></asp:ListItem>
+   <asp:ListItem Value='2'  Text="Edit User"></asp:ListItem>
    </asp:DropDownList>
-   <asp:Panel ID="PnlAddUser" runat="server" GroupingText="Add User">
+   &nbsp;&nbsp;<asp:Panel ID="PnlAddUser" runat="server" GroupingText="Add User">
     <table>
     <tr>
     <td>Name:</td>
@@ -63,7 +63,7 @@
 
     <tr>
    <td colspan=2><center>
-       <asp:Button ID="BtnSave" runat="server" Text="Save" />
+       <asp:Button ID="BtnSave" runat="server" Text="Save" onclick="BtnSave_Click" />
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Button ID="BtnReset" runat="server" Text="Reset" /></center>
        </td>
