@@ -9,7 +9,7 @@
     Select Task : 
     <asp:DropDownList ID="DdlTask" runat="server" AutoPostBack="True" 
         onselectedindexchanged="DdlTask_SelectedIndexChanged">
-        <asp:ListItem>Select Option </asp:ListItem>
+        <asp:ListItem Selected="True">Select Option </asp:ListItem>
         <asp:ListItem>Edit User</asp:ListItem>
         <asp:ListItem>Create User</asp:ListItem>
     </asp:DropDownList>
@@ -83,6 +83,18 @@
 <asp:Panel runat="server" ID="PnlEditUser" GroupingText="Edit User">
 					
 <table>
+    <tr>
+    <td colspan='2'>
+    <center>
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <asp:Button ID="BtnSearch" runat="server" Text="Search" />
+        <br />
+        </center>
+        </td>
+    </tr>
     <tr>
     <td>Name:</td>
     <td><asp:TextBox ID="TxtNameEdit" runat="server"></asp:TextBox></td>

@@ -7,13 +7,28 @@
 <tr>
 <td colspan=7>
     <asp:DropDownList ID="DdlFaculty" runat="server">
+        <asp:ListItem>IT</asp:ListItem>
+        <asp:ListItem>Computers</asp:ListItem>
+        <asp:ListItem>Electronics</asp:ListItem>
+        <asp:ListItem>Civil</asp:ListItem>
+        <asp:ListItem>Software</asp:ListItem>
+        <asp:ListItem>BBA</asp:ListItem>
     </asp:DropDownList>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:DropDownList ID="DdlSemister" runat="server">
+        <asp:ListItem>2010</asp:ListItem>
+        <asp:ListItem>2011</asp:ListItem>
+        <asp:ListItem>2012</asp:ListItem>
+        <asp:ListItem>2013</asp:ListItem>
+        <asp:ListItem></asp:ListItem>
     </asp:DropDownList>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:DropDownList ID="DdlShift" runat="server">
+        <asp:ListItem>Moring</asp:ListItem>
+        <asp:ListItem>Day</asp:ListItem>
     </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="BtnLoad" runat="server" Text="Load" />
 </td>
 </tr>
 

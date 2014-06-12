@@ -19,7 +19,7 @@
             border-bottom:2px solid #424D42;
             border-top:2px solid #424D42;
             font-style:normal;
-            color:6E6C4F;
+            color:#D7D7D9;
             background-color:#595959; 
                    
         }
@@ -41,7 +41,7 @@
             border-bottom:2px solid #424D42;
             background-color:#A5A5A5;
             min-height:600px;
-            color:6E6C4F;
+            color:#6E6C4F;
         }
         #divPageBody ul
         {
@@ -61,7 +61,7 @@
         #divNavigation ul li a
         {
             text-decoration:none;
-            color:#333333;            
+            color:#6E6C4F;            
             margin-left:20px;
         } 
         #divFooter h2
