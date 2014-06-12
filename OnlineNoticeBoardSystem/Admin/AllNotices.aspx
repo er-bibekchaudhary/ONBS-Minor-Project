@@ -3,6 +3,30 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-this is admin/allnotices
+<div id="divCurrent">
+              
+           <asp:Panel ID="PnlRelated" runat="server" GroupingText="Related Notices">
+           <asp:Repeater ID="rptrRelated"   runat="server">
+                                <ItemTemplate>
+                                       <%#Eval("Topic") %>
+                                                <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+           </asp:Panel>
+               
+        </div>
+
+
+
+        <div id="divHistory">
+          <asp:Panel ID="PnlAll" runat="server" GroupingText="All Notices">
+          <asp:Repeater ID="rptrAll"   runat="server">
+                        <ItemTemplate>
+                                    <%#Eval("Topic") %> <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+           </asp:Panel>                
+        </div>
+
 </asp:Content>
 
