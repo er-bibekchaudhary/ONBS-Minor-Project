@@ -4,5 +4,4 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 this is students/notices
-</asp:Content>
-
+</asp:Content
