@@ -27,6 +27,6 @@
                     </asp:Repeater>
            </asp:Panel>                
         </div>
-</div>
+
 </asp:Content>
 
