@@ -7,8 +7,7 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        <style type="text/css">
+       <style type="text/css">
        
         body
         {
@@ -17,31 +16,32 @@
         }
         #divHeader
         {
-            border-bottom:2px solid red;
-            border-top:2px solid red;
+            border-bottom:2px solid #424D42;
+            border-top:2px solid #424D42;
             font-style:normal;
-            color:Red;
-            background-color:#7ABF2C; 
+            color:6E6C4F;
+            background-color:#595959; 
                    
         }
         #divNavigation
         {
-            border-bottom:2px solid red;
-             background-color:#29400F;
+            border-bottom:2px solid #424D42;
+             background-color:#000000;
             
         }
         #divFooter
         {
-            border-bottom:2px solid red;
-             background-color:#527F1D;
+            border-bottom:2px solid #424D42;
+             background-color:#423142;
             
         }
         #divPageBody
         {
             
-            border-bottom:2px solid red;
-            background-color:#A3FF3B;
+            border-bottom:2px solid #424D42;
+            background-color:#A5A5A5;
             min-height:600px;
+            color:6E6C4F;
         }
         #divPageBody ul
         {
@@ -61,7 +61,7 @@
         #divNavigation ul li a
         {
             text-decoration:none;
-            color:#93E535;            
+            color:#333333;            
             margin-left:20px;
         } 
         #divFooter h2
@@ -72,15 +72,22 @@
         
             
     </style>
-        
-       
             
 </head>
 <body>
     <form id="form1" runat="server">
+     
     <div id="divHeader">
-    <img src="../Assets/Images/" height='75px' width='75px' style="float:left"/> <h1 style="float:left">Online Notice Board System</h1> <br />
-    <h3>Name Of Ogranization</h3>
+
+    <div style="float:left" >
+    <img src="../Assets/Images/" style="float:left; height: 96px; width: 104px;"/>
+    </div> 
+    
+    <div>
+        <h1>Online Notice Board System</h1>
+        <h3>Name Of Ogranization</h3>
+    </div>
+
     </div>
   
 

@@ -2,12 +2,19 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    Select Your Operation: <asp:DropDownList ID="DdlOperation" runat="server">
-    <asp:ListItem Value='1'  Text="Add User"></asp:ListItem>
-   <asp:ListItem Value='2'  Text="Edit User"></asp:ListItem>
-   </asp:DropDownList>
-   &nbsp;&nbsp;<asp:Panel ID="PnlAddUser" runat="server" GroupingText="Add User">
+
+    Select Task : 
+    <asp:DropDownList ID="DdlTask" runat="server" AutoPostBack="True" 
+        onselectedindexchanged="DdlTask_SelectedIndexChanged">
+        <asp:ListItem>Select Option </asp:ListItem>
+        <asp:ListItem>Edit User</asp:ListItem>
+        <asp:ListItem>Create User</asp:ListItem>
+    </asp:DropDownList>
+<br />
+<asp:Panel runat="server" ID="PnlCreateUser" GroupingText="Create User">
     <table>
     <tr>
     <td>Name:</td>
@@ -62,25 +69,20 @@
     </tr>
 
     <tr>
-   <td colspan=2><center>
-       <asp:Button ID="BtnSave" runat="server" Text="Save" onclick="BtnSave_Click" />
+   <td colspan='2'><center>
+       <asp:Button ID="BtnSave" runat="server" Text="Save" />
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Button ID="BtnReset" runat="server" Text="Reset" /></center>
        </td>
     </tr>
     </table>
-    
-    
-  
-  
-   
- 
-  
-    
-    </asp:Panel>
 
-    <asp:Panel ID="PnlEditUser" runat="server" GroupingText ="Edit User">
-    <table>
+</asp:Panel>
+
+
+<asp:Panel runat="server" ID="PnlEditUser" GroupingText="Edit User">
+					
+<table>
     <tr>
     <td>Name:</td>
     <td><asp:TextBox ID="TxtNameEdit" runat="server"></asp:TextBox></td>
@@ -126,15 +128,14 @@
 
 
      <tr>
-   <td colspan=2 ><center>
+   <td colspan='2' ><center>
        <asp:Button ID="BtnSaveEdit" runat="server" Text="Save" /> 
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
        <asp:Button ID="BtnResetEdit" runat="server" Text="Reset" /></center></td>
     </tr>
 
     </table>
-    </asp:Panel>
-
-
+				
+                </asp:Panel>		
 </asp:Content>
 
