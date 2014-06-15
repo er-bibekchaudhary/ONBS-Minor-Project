@@ -26,18 +26,8 @@
     <td><asp:TextBox ID="TxtLastName" runat="server"></asp:TextBox></td>
     </tr>
 
-    <tr>
-   <td>Password:</td>
-   <td><asp:TextBox ID="TxtPassword" runat="server"></asp:TextBox></td>
-    </tr>
-
-    <tr>
-   <td>Confirm Password:</td>
-   <td><asp:TextBox ID="TxtConfirm" runat="server"></asp:TextBox></td>
-    </tr>
-
-    <tr>
-   <td>Faculty:</td>
+   <tr>
+   <td>Depatrment:</td>
    <td><asp:DropDownList runat="server">
    <asp:ListItem>IT </asp:ListItem>
    <asp:ListItem>Computer </asp:ListItem>
@@ -47,13 +37,8 @@
    </asp:DropDownList></td>
     </tr>
 
-    <tr>
-   <td> Batch:</td>
-   <td><asp:TextBox ID="TxtBatch" runat="server"></asp:TextBox></td>
-    </tr>
-
-    <tr>
-   <td>RollNo.:</td>
+   <tr>
+   <td>Employee ID No.:</td>
    <td>  <asp:TextBox ID="TxtRollno" runat="server"></asp:TextBox></td>
     </tr>
 
@@ -107,7 +92,7 @@
 
   
     <tr>
-   <td>Faculty:</td>
+   <td>Department:</td>
    <td><asp:DropDownList ID="DdlFacultyEdit" runat="server">
    <asp:ListItem>IT </asp:ListItem>
    <asp:ListItem>Computer </asp:ListItem>
@@ -117,13 +102,8 @@
    </asp:DropDownList></td>
     </tr>
 
-    <tr>
-   <td> Batch:</td>
-   <td><asp:TextBox ID="TxtBatchEdit" runat="server"></asp:TextBox></td>
-    </tr>
-
-    <tr>
-   <td>RollNo.:</td>
+   <tr>
+   <td>Emp ID No.:</td>
    <td>  <asp:TextBox ID="TxtROllnoEdit" runat="server"></asp:TextBox></td>
     </tr>
 

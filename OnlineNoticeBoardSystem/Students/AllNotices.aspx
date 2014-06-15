@@ -18,7 +18,7 @@
 
 
 
-        <div id="divHistory" style=" width:49%">
+        <div id="divAll">
           <asp:Panel ID="PnlAll" runat="server" GroupingText="All Notices">
           <asp:Repeater ID="rptrAll"   runat="server">
                         <ItemTemplate>

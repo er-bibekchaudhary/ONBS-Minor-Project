@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div id="divCurrent" style="float:left; width:49%" >
+<div id="divCurrent" style="float:left; width:48%" >
               
            <asp:Panel ID="PnlRelated" runat="server" GroupingText="Related Notices">
            <asp:Repeater ID="rptrRelated"   runat="server">
@@ -18,7 +18,7 @@
 
 
 
-        <div id="divHistory" style=" width:49%">
+        <div id="divAll">
           <asp:Panel ID="PnlAll" runat="server" GroupingText="All Notices">
           <asp:Repeater ID="rptrAll"   runat="server">
                         <ItemTemplate>
