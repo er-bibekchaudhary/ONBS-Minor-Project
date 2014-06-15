@@ -94,13 +94,11 @@
 
     <div id="divNavigation">
     <ul >
-      <li><a href="Home.aspx">HOME</a></li>
-      <li><a href="Notices.aspx">NOTICE</a></li>
-      <li><a href="AllNotices.aspx">All NOTICES</a></li>
+      <li><a href="AllNotices.aspx">Home</a></li>
       <li><a href="ManageNotices.aspx">MANAGE NOTICE</a></li>
       <li><a href="ManageUsers.aspx">MANAGE USERS</a></li>
       <li><a href="ManageRoutines.aspx">MANAGE ROUTINE</a></li>
-
+      <li><a href="Settings.aspx">SETTINGS</a></li>
       
       
     </ul>
