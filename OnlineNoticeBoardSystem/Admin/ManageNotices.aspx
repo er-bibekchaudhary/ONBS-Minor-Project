@@ -10,10 +10,28 @@
     <tr>
     <td colspan=2>
         <asp:DropDownList ID="DdlFaculty" runat="server">
+            <asp:ListItem>All</asp:ListItem>
+            <asp:ListItem>IT</asp:ListItem>
+            <asp:ListItem>Computer</asp:ListItem>
+            <asp:ListItem>Electronic & Communication</asp:ListItem>
+            <asp:ListItem>Software</asp:ListItem>
+            <asp:ListItem>Civil</asp:ListItem>
+            <asp:ListItem>BBA</asp:ListItem>
+
         </asp:DropDownList>
+        &nbsp;&nbsp;
         <asp:DropDownList ID="DdlSemester" runat="server">
+            <asp:ListItem>All</asp:ListItem>
+            <asp:ListItem>2010</asp:ListItem>
+            <asp:ListItem>2011</asp:ListItem>
+            <asp:ListItem>2012</asp:ListItem>
+            <asp:ListItem>2013</asp:ListItem>
         </asp:DropDownList>
+        &nbsp;&nbsp;
         <asp:DropDownList ID="DdlShift" runat="server">
+            <asp:ListItem>All</asp:ListItem>
+            <asp:ListItem>Morning</asp:ListItem>
+            <asp:ListItem>Day</asp:ListItem>
         </asp:DropDownList>
     </td></tr>
     <tr>
@@ -44,6 +62,19 @@
      <asp:Panel ID="PnlEditNotice" runat="server" Width="909px" GroupingText="Edit Notice">
      <table>
      <tr>
+    <td colspan='2'>
+    <center>
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <asp:Button ID="BtnSearch" runat="server" Text="Search" />
+        <br />
+        <br />
+        </center>
+        </td>
+    </tr>
+     <tr>
      <td>Reference:
      </td>
      <td>
@@ -54,7 +85,7 @@
      <td>Notice:
      </td>
      <td>
-         <asp:TextBox ID="TxtNoticeEdit" runat="server"></asp:TextBox>
+         <asp:TextBox ID="TxtNoticeEdit" runat="server" Height="197px" Width="383px"></asp:TextBox>
      </td></tr>
      <tr>
      <td>

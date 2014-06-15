@@ -3,6 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-This is general Home web page
+<div id="divCurrent">
+           
+          <asp:Panel ID="PnlAll" runat="server" GroupingText="All Notices">
+
+
+          <asp:Repeater ID="rptrAll"   runat="server">
+                        <ItemTemplate>
+                                    <%#Eval("Topic") %> <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+           </asp:Panel>                
+        </div>
 </asp:Content>
 

@@ -86,7 +86,7 @@
     <tr>
     <td colspan='2'>
     <center>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TxtSearch" runat="server"></asp:TextBox>
     
         &nbsp;&nbsp;&nbsp;&nbsp;
     
