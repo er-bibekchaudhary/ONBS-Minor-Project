@@ -9,6 +9,19 @@ public partial class Teachers_AddNotice : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        PnlEditNotice.Visible = false;
+    }
+    protected void DdlOperation_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (DdlOperation.SelectedItem.ToString() == "Add Notice")
+        {
+            PnlAddNotice.Visible = true;
+            PnlEditNotice.Visible = false;
+        }
+        if (DdlOperation.SelectedItem.ToString() == "Edit Notice")
+        {
+            PnlAddNotice.Visible = false;
+            PnlEditNotice.Visible = true;
+        }
     }
 }

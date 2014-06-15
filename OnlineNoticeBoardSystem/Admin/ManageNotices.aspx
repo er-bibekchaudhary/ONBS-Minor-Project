@@ -3,12 +3,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    this is admin/managenotices<br />
+    Select Operation:
+    <asp:DropDownList ID="DdlOperation" runat="server" 
+        onselectedindexchanged="DdlOperation_SelectedIndexChanged">
+        <asp:ListItem>Select Operation</asp:ListItem>
+        <asp:ListItem>Add Notice</asp:ListItem>
+        <asp:ListItem>Edit Notice</asp:ListItem>
+    </asp:DropDownList>
     <br />
+<br />
     <asp:Panel ID="PnlAddNotice" runat="server" Width="909px" GroupingText="Add Notice">
     <table>
     <tr>
-    <td colspan=2>
+    <td colspan='2'>
         <asp:DropDownList ID="DdlFaculty" runat="server">
             <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>IT</asp:ListItem>
@@ -55,10 +62,10 @@
     
     
     </table>
-
-
- 
     </asp:Panel>
+
+
+
      <asp:Panel ID="PnlEditNotice" runat="server" Width="909px" GroupingText="Edit Notice">
      <table>
      <tr>
