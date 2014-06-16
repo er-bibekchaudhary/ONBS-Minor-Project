@@ -94,6 +94,7 @@
     <div id="divNavigation">
     <ul >
     <li><a href="Home.aspx">HOME</a></li>
+    <li><a href="Routine.aspx">ROUTINE</a></li>
     </ul>
     </div>
 
