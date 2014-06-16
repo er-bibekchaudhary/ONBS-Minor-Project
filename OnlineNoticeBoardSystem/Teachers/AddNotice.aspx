@@ -5,7 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 Select Operation:
     <asp:DropDownList ID="DdlOperation" runat="server" 
-        onselectedindexchanged="DdlOperation_SelectedIndexChanged">
+        onselectedindexchanged="DdlOperation_SelectedIndexChanged" 
+        AutoPostBack="True">
         <asp:ListItem>Add Notice</asp:ListItem>
         <asp:ListItem>Edit Notice</asp:ListItem>
     </asp:DropDownList>
@@ -15,7 +16,7 @@ Select Operation:
     <table>
     <tr>
     <td colspan=2>
-        <asp:DropDownList ID="DdlFaculty" runat="server">
+        <asp:DropDownList ID="DdlFaculty" runat="server" AutoPostBack="True">
             <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>IT</asp:ListItem>
             <asp:ListItem>Computer</asp:ListItem>
@@ -26,7 +27,7 @@ Select Operation:
 
         </asp:DropDownList>
         &nbsp;&nbsp;
-        <asp:DropDownList ID="DdlSemester" runat="server">
+        <asp:DropDownList ID="DdlSemester" runat="server" AutoPostBack="True">
             <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>2010</asp:ListItem>
             <asp:ListItem>2011</asp:ListItem>
@@ -34,7 +35,7 @@ Select Operation:
             <asp:ListItem>2013</asp:ListItem>
         </asp:DropDownList>
         &nbsp;&nbsp;
-        <asp:DropDownList ID="DdlShift" runat="server">
+        <asp:DropDownList ID="DdlShift" runat="server" AutoPostBack="True">
             <asp:ListItem>All</asp:ListItem>
             <asp:ListItem>Morning</asp:ListItem>
             <asp:ListItem>Day</asp:ListItem>
@@ -54,18 +55,39 @@ Select Operation:
     <td>
          <asp:TextBox ID="TxtNotice" runat="server" Height="260px" Width="375px"></asp:TextBox>
     </td></tr>
+
     <tr>
-<td>
-    <asp:Button ID="BtnSave" runat="server" Text="Save" />
-</td>    </tr>
+    <td>Attachment:
+    </td>
+    <td><asp:FileUpload ID="FupAttach" runat="server" /> 
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+        <asp:Button ID="BtnSave" runat="server" Text="Save" />
+    </td>
+    </tr>
     
     
     </table>
-
-
- 
     </asp:Panel>
+     
+     <%-- Edit Panel Started --%>
+
      <asp:Panel ID="PnlEditNotice" runat="server" Width="909px" GroupingText="Edit Notice">
+     
+     <div id="List Of Notices" style="float:left; width:30%" >
+     <asp:Panel ID="PnlUserNotices" runat="server" GroupingText="Notices Posted By You">
+           <asp:Repeater ID="rptrRelated"   runat="server">
+                                <ItemTemplate>
+                                       <%#Eval("Topic") %>
+                                                <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+           </asp:Panel>
+     </div>
+     <div>
      <table>
      <tr>
      <td>Reference:
@@ -83,12 +105,9 @@ Select Operation:
      <tr>
      <td>
          <asp:Button ID="BtnSaveEdit" runat="server" Text="Save" />
-     </td></tr>
-     
-     
+     </td></tr> 
      </table>
-
-
+     </div>
     </asp:Panel>
 </asp:Content>
 

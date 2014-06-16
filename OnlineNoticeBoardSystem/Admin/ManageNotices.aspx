@@ -5,10 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     Select Operation:
     <asp:DropDownList ID="DdlOperation" runat="server" 
-        onselectedindexchanged="DdlOperation_SelectedIndexChanged">
-        <asp:ListItem>Select Operation</asp:ListItem>
+        onselectedindexchanged="DdlOperation_SelectedIndexChanged" 
+        AutoPostBack="True">
         <asp:ListItem>Add Notice</asp:ListItem>
         <asp:ListItem>Edit Notice</asp:ListItem>
+        
     </asp:DropDownList>
     <br />
 <br />
@@ -55,6 +56,14 @@
     <td>
          <asp:TextBox ID="TxtNotice" runat="server" Height="260px" Width="375px"></asp:TextBox>
     </td></tr>
+
+    <tr>
+    <td>Attachment:
+    </td>
+    <td><asp:FileUpload ID="FupAttach" runat="server" />
+        
+    </td>
+    </tr>
     <tr>
 <td>
     <asp:Button ID="BtnSave" runat="server" Text="Save" />
@@ -67,11 +76,25 @@
 
 
      <asp:Panel ID="PnlEditNotice" runat="server" Width="909px" GroupingText="Edit Notice">
+     <div id="List Of Notices" style="float:left; width:30%" >
+     <asp:Panel ID="PnlUserNotices" runat="server" GroupingText="Notices Posted By You">
+           <asp:Repeater ID="rptrRelated"   runat="server">
+                                <ItemTemplate>
+                                       <%#Eval("Topic") %>
+                                                <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+           </asp:Panel>
+     </div>
+
+
+
+     <div>
      <table>
      <tr>
     <td colspan='2'>
     <center>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TxtSearch" runat="server"></asp:TextBox>
     
         &nbsp;&nbsp;&nbsp;&nbsp;
     
@@ -94,6 +117,15 @@
      <td>
          <asp:TextBox ID="TxtNoticeEdit" runat="server" Height="197px" Width="383px"></asp:TextBox>
      </td></tr>
+
+     <tr>
+    <td>Attachment:
+    </td>
+    <td><asp:FileUpload ID="FupAttachEdit" runat="server" />
+        
+    </td>
+    </tr>
+     
      <tr>
      <td>
          <asp:Button ID="BtnSaveEdit" runat="server" Text="Save" />
@@ -102,7 +134,7 @@
      
      </table>
 
-
+     </div>
     </asp:Panel>
 &nbsp;
 

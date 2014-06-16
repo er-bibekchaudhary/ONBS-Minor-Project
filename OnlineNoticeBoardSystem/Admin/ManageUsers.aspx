@@ -28,7 +28,7 @@
 
    <tr>
    <td>Depatrment:</td>
-   <td><asp:DropDownList runat="server">
+   <td><asp:DropDownList runat="server" AutoPostBack="True">
    <asp:ListItem>IT </asp:ListItem>
    <asp:ListItem>Computer </asp:ListItem>
    <asp:ListItem>Electronic & Communication </asp:ListItem>
@@ -93,7 +93,7 @@
   
     <tr>
    <td>Department:</td>
-   <td><asp:DropDownList ID="DdlFacultyEdit" runat="server">
+   <td><asp:DropDownList ID="DdlFacultyEdit" runat="server" AutoPostBack="True">
    <asp:ListItem>IT </asp:ListItem>
    <asp:ListItem>Computer </asp:ListItem>
    <asp:ListItem>Electronic & Communication </asp:ListItem>
