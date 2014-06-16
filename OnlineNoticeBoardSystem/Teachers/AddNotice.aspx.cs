@@ -24,4 +24,15 @@ public partial class Teachers_AddNotice : System.Web.UI.Page
             PnlEditNotice.Visible = true;
         }
     }
+    protected void DdlType_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (DdlType.SelectedItem.ToString() == "General Notice")
+        {
+            pnlDeadLine.Visible=false;
+        }
+        if (DdlType.SelectedItem.ToString() == "Tutorials")
+        {
+            pnlDeadLine.Visible = true;
+        }
+    }
 }

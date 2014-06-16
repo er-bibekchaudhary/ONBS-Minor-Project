@@ -41,6 +41,20 @@ Select Operation:
             <asp:ListItem>Day</asp:ListItem>
         </asp:DropDownList>
     </td></tr>
+
+    <tr>
+    <td>Type:
+    </td>
+    <td>
+        <asp:DropDownList ID="DdlType" runat="server" AutoPostBack="true" 
+            onselectedindexchanged="DdlType_SelectedIndexChanged">
+        <asp:ListItem>General Notice</asp:ListItem>
+        <asp:ListItem>Tutorials</asp:ListItem>
+        </asp:DropDownList>
+
+    </td>
+    </tr>
+
     <tr>
     <td>Reference:
     </td>
@@ -62,15 +76,19 @@ Select Operation:
     <td><asp:FileUpload ID="FupAttach" runat="server" /> 
     </td>
     </tr>
-
-    <tr>
-    <td>
-        <asp:Button ID="BtnSave" runat="server" Text="Save" />
-    </td>
-    </tr>
-    
-    
     </table>
+
+    <asp:panel ID="pnlDeadLine" Visible='false' runat="server">
+    DeadLine:<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+    </asp:panel>
+     
+
+    
+        <asp:Button ID="BtnSave" runat="server" Text="Save" />
+    
+    
+    
+    
     </asp:Panel>
      
      <%-- Edit Panel Started --%>
