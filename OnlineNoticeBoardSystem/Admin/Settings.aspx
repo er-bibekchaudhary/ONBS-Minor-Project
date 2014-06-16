@@ -26,23 +26,12 @@
   </ol>
 </div>
 
+
+
 <div id="DivSetting">
 <asp:Panel ID="pnlPersonal" runat="server">
 <table>
-    <tr>
-    <td>Name:</td>
-    <td><asp:TextBox ID="TxtUName" runat="server"></asp:TextBox></td>
-    </tr>
-
-    <tr>
-    <td>Last Name:</td>
-    <td><asp:TextBox ID="TxtLastName" runat="server"></asp:TextBox></td>
-    </tr>
-
-   <tr>
-   <td>Employee ID No.:</td>
-   <td>  <asp:TextBox ID="TxtRollno" runat="server"></asp:TextBox></td>
-    </tr>
+    
 
     <tr>
    <td>
@@ -70,8 +59,10 @@
     </table>
 </asp:Panel>
 
+
+
 <asp:Panel ID="PnlPassword" runat="server" Visible="false">
-<center>
+
 <table>
 
 <tr>
@@ -86,7 +77,6 @@
     <asp:TextBox ID="TxtNewPassword" runat="server"></asp:TextBox></td>
 </tr>
 
-
 <tr>
 <td>Conform Password</td>
 <td>
@@ -95,12 +85,12 @@
 
 </table>
 <asp:Button ID="BtnChange" runat="server"  Text="Change"/> 
-</center>
-
 </asp:Panel>
 
+
+
 <asp:Panel ID="pnlPending" runat="server" Visible="false">
-<table>
+<table border='2'>
 
 <tr>
 <th>S.No.</th>

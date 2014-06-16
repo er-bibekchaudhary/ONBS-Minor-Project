@@ -11,4 +11,15 @@ public partial class Students_Settings : System.Web.UI.Page
     {
 
     }
+    protected void LbtPerDetails_Click(object sender, EventArgs e)
+    {
+        pnlPersonal.Visible = true;
+        PnlPassword.Visible = false;
+    }
+    protected void LbtPassword_Click(object sender, EventArgs e)
+    {
+
+        pnlPersonal.Visible = false;
+        PnlPassword.Visible = true;
+    }
 }
