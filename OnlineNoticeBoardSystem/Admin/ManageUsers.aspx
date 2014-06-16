@@ -48,6 +48,12 @@
    <td> <asp:TextBox ID="TxtAddress" runat="server"></asp:TextBox></td>
     </tr>
 
+    <tr>
+   <td>
+    E-mail:</td>
+   <td> <asp:TextBox ID="TxtEmail" runat="server"></asp:TextBox></td>
+    </tr>
+
      <tr>
    <td> Contact No.:</td>
    <td> <asp:TextBox ID="TxtContact" runat="server"></asp:TextBox></td>
@@ -111,6 +117,12 @@
    <td>
     Address:</td>
    <td> <asp:TextBox ID="TxtAddressEdit" runat="server"></asp:TextBox></td>
+    </tr>
+
+    <tr>
+   <td>
+    E-mail:</td>
+   <td> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
     </tr>
 
      <tr>
