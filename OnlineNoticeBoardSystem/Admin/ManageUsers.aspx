@@ -5,7 +5,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<br /><br /><br />
+    <br />
     Select Task : 
     <asp:DropDownList ID="DdlTask" runat="server" AutoPostBack="True" 
         onselectedindexchanged="DdlTask_SelectedIndexChanged">
@@ -13,6 +13,7 @@
         <asp:ListItem>Edit User</asp:ListItem>
         <asp:ListItem>Create User</asp:ListItem>
     </asp:DropDownList>
+    <br />
 <br />
 <asp:Panel runat="server" ID="PnlCreateUser" GroupingText="Create User">
     <table>

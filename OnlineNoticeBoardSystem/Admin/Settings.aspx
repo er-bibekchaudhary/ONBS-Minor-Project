@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<br /><br /><br />
+    <br />
 <div id="DivMenu" style="Float:left; width:250px;">
   <ol>
   
@@ -90,26 +90,7 @@
 
 
 <asp:Panel ID="pnlPending" runat="server" Visible="false">
-<table border='2'>
 
-<tr>
-<th>S.No.</th>
-<th>Name</th>
-<th>Roll</th>
-<th>ID Card</th>
-<th>Status</th>
-<th>Change</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Aaaa</td>
-<td>10423</td>
-<td>id10423.jpg</td>
-<td>Active</td>
-<td><asp:Button ID="BtnChangeStatus" Text="change" runat="server" /> </td>
-</tr>
-</table>
 </asp:Panel>
 
 
