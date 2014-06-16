@@ -11,4 +11,32 @@ public partial class Admin_Settings : System.Web.UI.Page
     {
 
     }
+    protected void LbtPerDetails_Click(object sender, EventArgs e)
+    {
+        pnlPersonal.Visible = true;
+        pnlPending.Visible = false;
+        PnlPassword.Visible = false;
+        PnlDeleteUser.Visible = false;
+    }
+    protected void LbtPassword_Click(object sender, EventArgs e)
+    {
+        pnlPersonal.Visible = false;
+        pnlPending.Visible = false;
+        PnlPassword.Visible = true;
+        PnlDeleteUser.Visible = false;
+    }
+    protected void LbtPendingRequet_Click(object sender, EventArgs e)
+    {
+        pnlPersonal.Visible = false;
+        pnlPending.Visible = true;
+        PnlPassword.Visible = false;
+        PnlDeleteUser.Visible = false;
+    }
+    protected void LbtDeleteUsers_Click(object sender, EventArgs e)
+    {
+        pnlPersonal.Visible = false;
+        pnlPending.Visible = false;
+        PnlPassword.Visible = false;
+        PnlDeleteUser.Visible = true;
+    }
 }
